@@ -18,7 +18,9 @@
     "test": "mocha -r ts-node/register ./spec/**/*.spec.ts",
     "ts-node": "ts-node",
     "lint": "tslint -c tslint.json './{src,spec}/**/*.ts'",
-    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "prepare": "npm run build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
