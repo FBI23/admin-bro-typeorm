@@ -34,8 +34,6 @@ export class ExtendedRecord extends BaseRecord {
         const property = this.resource.property(n);
 
         if (property) {
-          console.log({ property });
-
           let type;
 
           try {
